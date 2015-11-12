@@ -1,0 +1,79 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="LifeGameHelp"
+    Title="説明" ResizeMode="NoResize" Height="480" Width="550">
+    <Grid>
+        <StackPanel>
+            <Label>
+                <TabControl>
+                    <TabItem Header="ルール">
+                        <Grid Background="#FFE5E5E5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="0" Content="■誕生"/>
+                            <Label Grid.Row="1" Content="死んでいるセル(白)に隣接する生きたセル(黒)がちょうど3つあれば、次の世代が誕生する。"/>
+                            <Label Grid.Row="2" Content="■生存"/>
+                            <Label Grid.Row="3" Content="生きているセル(黒)に隣接する生きたセル(黒)が2つか3つならば、次の世代でも生存する。"/>
+                            <Label Grid.Row="4" Content="■過疎"/>
+                            <Label Grid.Row="5" Content="生きているセル(黒)に隣接する生きたセル(黒)が1つ以下ならば、過疎により死滅する。"/>
+                            <Label Grid.Row="6" Content="■過密"/>
+                            <Label Grid.Row="7" Content="生きているセル(黒)に隣接する生きたセル(黒)が4つ以上ならば、過密により死滅する。"/>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="遊び方">
+                        <Grid Background="#FFE5E5E5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="0" Content="■進行or停止ボタン、スライド"/>
+                            <Label Grid.Row="1" Content="世代を一定時間ごとに進めたり、止めます。スライドによって進行時間を変化させます。"/>
+                            <Label Grid.Row="2" Content="■保存ボタン"/>
+                            <Label Grid.Row="3" Content="現在のボードの内容をファイルに保存します。"/>
+                            <Label Grid.Row="4" Content="■復元ボタン"/>
+                            <Label Grid.Row="5" Content="保存ボタンで作成したファイルを読み込み、復元します。"/>
+                            <Label Grid.Row="6" Content="■説明ボタン"/>
+                            <Label Grid.Row="7" Content="このウィンドウを開きます。"/>
+                            <Label Grid.Row="8" Content="■履歴有効チェック"/>
+                            <Label Grid.Row="9" Content="世代を進める毎に履歴を残します。非常に重い処理ですのでお勧めしません。"/>
+                            <Label Grid.Row="10" Content="■履歴消去ボタン"/>
+                            <Label Grid.Row="11" Content="履歴を削除します。定期的に実行すると軽くなります。"/>
+                            <Label Grid.Row="12" Content="■履歴リスト"/>
+                            <Label Grid.Row="13" Content="履歴をクリックすることでその時点の状態を復元します。"/>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="バージョン">
+                        <Grid Background="#FFE5E5E5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="0" Content="LifeGame Ver 1.0.0"/>
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+            </Label>
+            
+        </StackPanel>
+    </Grid>
+</Window>
